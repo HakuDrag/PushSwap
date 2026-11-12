@@ -193,6 +193,7 @@ Unlike the mandatory program, the checker neither chooses a sorting strategy nor
 - [42 School push_swap subject](https://github.com/42School) — project requirements (this project uses subject version 1.2).
 - [Insertion sort — Wikipedia](https://en.wikipedia.org/wiki/Insertion_sort).
 - [Bubble sort — Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort).
+- [Chunking sort — Wikipedia](https://en.wikipedia.org/wiki/Partial_sorting).
 - [Quicksort — Wikipedia](https://en.wikipedia.org/wiki/Quicksort).
 - 42 School **Norminette** coding convention.
 
@@ -207,15 +208,17 @@ Unlike the mandatory program, the checker neither chooses a sorting strategy nor
 -   medium sorting
 -   make file
 -   filing the stack
+-   corected exit header make file
 
 `dkryvono`
 
 -   parsing 
 -   bonus
 -   bench flag
--   simple sorting
+-   simple sortings
 -   complex sorting
 -   filing the stack
+-   corrected complex
 
 ## Authors
 

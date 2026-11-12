@@ -87,7 +87,7 @@ int					ft_parse_flag(char *str, t_options *options);
 int					ft_allocation_check(t_stack *a);
 int					ft_allocate(int argc, char **argv, t_stack *a,
 						t_options *options);
-void				ft_delete_allocation(t_stack **a, t_options *options);
+void				ft_delete_allocation(t_stack *a);
 void				ft_push_swap(int argc, char **argv);
 void				ft_simple_sort(t_stack *a, t_stack *b, t_options *options);
 void				ft_medium_sort(t_stack *a, t_stack *b, t_options *options);

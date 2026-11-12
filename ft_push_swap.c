@@ -71,50 +71,35 @@ void	fd_bench(t_options *options)
 	fd_bench_operations(options);
 }
 
-static int	ft_init_structs(t_stack **a, t_options **options)
+static void	ft_init_structs(t_stack *a, t_options *options)
 {
-	*a = malloc(sizeof(t_stack));
-	if (!*a)
-	{
-		ft_error();
-		return (0);
-	}
-	*options = malloc(sizeof(t_options));
-	if (!*options)
-	{
-		free(*a);
-		ft_error();
-		return (0);
-	}
-	ft_init_stack(*a);
-	(*options)->bench = 0;
-	(*options)->selected = 0;
-	(*options)->option = ADAPTIVE;
-	(*options)->s_bench = (t_bench){0};
-	(*options)->s_bench.disorder = -1.0;
-	return (1);
+	ft_init_stack(a);
+	options->bench = 0;
+	options->selected = 0;
+	options->option = ADAPTIVE;
+	options->s_bench = (t_bench){0};
+	options->s_bench.disorder = -1.0;
 }
 
 void	ft_push_swap(int argc, char **argv)
 {
-	t_stack		*a;
-	t_options	*options;
+	t_stack		a;
+	t_options	options;
 
 	if (argc < 2)
 		exit(EXIT_SUCCESS);
-	if (!ft_init_structs(&a, &options))
-		exit(EXIT_FAILURE);
-	if (!ft_allocate(argc, argv, a, options) || a->size == 0
-		|| !ft_allocation_check(a))
+	ft_init_structs(&a, &options);
+	if (!ft_allocate(argc, argv, &a, &options) || a.size == 0
+		|| !ft_allocation_check(&a))
 	{
-		ft_delete_allocation(&a, options);
+		ft_delete_allocation(&a);
 		ft_error();
 		exit(EXIT_FAILURE);
 	}
-	ft_assign_index(a);
-	ft_sort(a, options);
-	if (options->bench == 1)
-		fd_bench(options);
-	ft_delete_allocation(&a, options);
+	ft_assign_index(&a);
+	ft_sort(&a, &options);
+	if (options.bench == 1)
+		fd_bench(&options);
+	ft_delete_allocation(&a);
 	exit(EXIT_SUCCESS);
 }

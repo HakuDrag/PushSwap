@@ -67,19 +67,16 @@ int	ft_allocation_check(t_stack *a)
 	return (1);
 }
 
-void	ft_delete_allocation(t_stack **a, t_options *options)
+void	ft_delete_allocation(t_stack *a)
 {
 	t_node	*deleted;
 	t_node	*next;
 
-	deleted = (*a)->top;
+	deleted = a->top;
 	while (deleted)
 	{
 		next = deleted->next;
 		free(deleted);
 		deleted = next;
 	}
-	free(*a);
-	*a = NULL;
-	free(options);
 }
