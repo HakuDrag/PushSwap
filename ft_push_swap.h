@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_push_swap.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: callwood <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: callwood <callwood@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:45:54 by callwood          #+#    #+#             */
 /*   Updated: 2026/11/03 13:46:00 by callwood         ###   ########.fr       */

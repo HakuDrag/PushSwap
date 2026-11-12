@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_medium_sort.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dkryvono <dkryvono@student.42belgium.be>   +#+  +:+       +#+        */
+/*   By: callwood <callwood@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/05 00:00:00 by dkryvono          #+#    #+#             */
-/*   Updated: 2026/11/05 00:00:00 by dkryvono         ###   ########.fr       */
+/*   Created: 2026/11/05 00:00:00 by callwood          #+#    #+#             */
+/*   Updated: 2026/11/05 00:00:00 by callwood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

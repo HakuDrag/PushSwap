@@ -198,6 +198,25 @@ Unlike the mandatory program, the checker neither chooses a sorting strategy nor
 
 **AI usage:** ChatGPT was used to review code, discuss algorithmic choices and debugging, and help draft and format this README. Code and explanations must be reviewed and understood by the project authors.
 
+## Project Distribution
+
+`callwood`
+
+-   sorting rules (sa, sb, ss, pa, pb , ...)
+-   header with the linked list struct
+-   medium sorting
+-   make file
+-   filing the stack
+
+`dkryvono`
+
+-   parsing 
+-   bonus
+-   bench flag
+-   simple sorting
+-   complex sorting
+-   filing the stack
+
 ## Authors
 
 - `dkryvono`

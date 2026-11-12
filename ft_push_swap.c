@@ -101,19 +101,20 @@ void	ft_push_swap(int argc, char **argv)
 	t_options	*options;
 
 	if (argc < 2)
-		return ;
+		exit(EXIT_SUCCESS);
 	if (!ft_init_structs(&a, &options))
-		return ;
+		exit(EXIT_FAILURE);
 	if (!ft_allocate(argc, argv, a, options) || a->size == 0
 		|| !ft_allocation_check(a))
 	{
 		ft_delete_allocation(&a, options);
 		ft_error();
-		return ;
+		exit(EXIT_FAILURE);
 	}
 	ft_assign_index(a);
 	ft_sort(a, options);
 	if (options->bench == 1)
 		fd_bench(options);
 	ft_delete_allocation(&a, options);
+	exit(EXIT_SUCCESS);
 }

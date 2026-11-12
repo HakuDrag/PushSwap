@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_reverse_rotate.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: callwood <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: callwood <callwood@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:41:35 by callwood          #+#    #+#             */
 /*   Updated: 2026/11/03 13:41:39 by callwood         ###   ########.fr       */

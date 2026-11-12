@@ -2,7 +2,7 @@ NAME        = push_swap
 BONUS_NAME   = checker
 
 CC          = cc
-CFLAGS      = -Wall -Wextra -Werror
+CFLAGS      = -Wall -Wextra -Werror -MP -MMD
 
 FT_PRINTF_DIR = ft_printf
 LIBFT_DIR    = ft_printf/libft
@@ -45,6 +45,8 @@ BONUS_SRCS  = error.c \
 
 OBJS        = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 BONUS_OBJS  = $(BONUS_SRCS:%.c=$(OBJ_DIR)/%.o)
+
+-include $(OBJS:.o=.d) $(BONUS_OBJS:.o=.d)
 
 FT_PRINTF   = $(FT_PRINTF_DIR)/libftprintf.a
 GNL_OBJS    = $(GNL_DIR)/get_next_line.o \
