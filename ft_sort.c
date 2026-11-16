@@ -47,7 +47,7 @@ void	ft_sort(t_stack *a, t_options *options)
 	if (options->option == COMPLEX
 		|| (options->option == ADAPTIVE
 			&& options->s_bench.disorder >= 0.5))
-		ft_complex_sort(a, &b, options);
+		quick_sort_a(a, &b, a->size, options);
 	else if (options->option == MEDIUM
 		|| (options->option == ADAPTIVE
 			&& options->s_bench.disorder >= 0.2))

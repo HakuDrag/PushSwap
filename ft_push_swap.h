@@ -92,7 +92,8 @@ void				ft_push_swap(int argc, char **argv);
 void				ft_simple_sort(t_stack *a, t_stack *b, t_options *options);
 void				ft_medium_sort(t_stack *a, t_stack *b, t_options *options);
 void				ft_assign_index(t_stack *a);
-void				ft_complex_sort(t_stack *a, t_stack *b, t_options *options);
+void				quick_sort_a(t_stack *a, t_stack *b, int count,
+						t_options *options);
 int					ft_partition_a(t_stack *a, t_stack *b, int count,
 						t_options *options);
 int					ft_partition_b(t_stack *a, t_stack *b, int count,

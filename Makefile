@@ -1,5 +1,5 @@
 NAME        = push_swap
-BONUS_NAME   = checker
+BONUS_NAME  = checker
 
 CC          = cc
 CFLAGS      = -Wall -Wextra -Werror -MP -MMD
@@ -76,10 +76,11 @@ $(FT_PRINTF):
 
 clean:
 	@rm -rf $(OBJ_DIR)
-	@rm -f $(NAME) $(BONUS_NAME) $(GNL_OBJS)
+	@rm -f $(GNL_OBJS)
 	@make -C $(FT_PRINTF_DIR) clean
 
 fclean: clean
+	@rm -f $(NAME) $(BONUS_NAME)
 	@make -C $(FT_PRINTF_DIR) fclean
 
 re: fclean all
